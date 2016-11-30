@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/iVMovie"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/tvMovieNm"
+        android:layout_alignRight="@+id/tvMovieNm"
+        android:layout_below="@+id/tvMovieNm"
+        android:src="@drawable/image"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iVMovie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="name" />
+
+    <ImageView
+        android:id="@+id/tvMovieNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/mark"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/testbtnMAP"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="지도보기"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/testBtnSearch"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="검색하기"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/testBtnChart"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="영화순위"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="setting" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnGallery"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnCamera"
+        android:layout_alignRight="@+id/btnCamera"
+        android:layout_below="@+id/btnCamera"
+        android:onClick="onClick"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gallary"
+        />
+
+    <ImageButton
+        android:id="@+id/btnCamera"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvMovieNm"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/iVMovie"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@drawable/camera" />
+
+    <ImageButton
+        android:id="@+id/btnReviewScrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnGallery"
+        android:layout_alignTop="@+id/btnMovieScrap"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@drawable/reviewscrap" />
+
+    <ImageButton
+        android:id="@+id/btnMovieScrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView2"
+        android:layout_marginTop="52dp"
+        android:layout_toLeftOf="@+id/TextView2"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@drawable/moviescrap" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvMovieNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="설정"
+        android:textColor="@color/title"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvOpenDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvMovieNm"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:text="내 정보수정" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOpenDt"
+        android:layout_below="@+id/tvOpenDt"
+        android:layout_marginTop="60dp"
+        android:text="WIFI설정" />
+
+    <Button
+        android:id="@+id/btnChangeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/tvOpenDt"
+        android:layout_alignBottom="@+id/tvOpenDt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:onClick="onClick"
+        android:text=">" />
+
+    <ToggleButton
+        android:id="@+id/ToggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignLeft="@+id/btnChangeInfo"
+        android:background="@color/title"
+        android:checked="true"
+        android:text="         " />
+
+</RelativeLayout>

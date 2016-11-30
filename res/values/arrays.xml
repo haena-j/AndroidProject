@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+	<string-array name="times">
+		<item>10초 후</item>
+		<item>30분 후</item>
+		<item>1시간 후</item>
+		<item>2시간 후</item>
+	</string-array>
+</resources>

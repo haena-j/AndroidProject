@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg3"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvMovieNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/change_id"
+        android:layout_alignBottom="@+id/change_id"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="이름"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text" />
+    
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMovieNm"
+        android:layout_below="@+id/tvMovieNm"
+        android:layout_marginTop="25dp"
+        android:text="PW"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/tDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView2"
+        android:layout_below="@+id/TextView2"
+        android:layout_marginTop="25dp"
+        android:text="PW확인"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tDirector"
+        android:layout_below="@+id/tDirector"
+        android:layout_marginTop="25dp"
+        android:text="연락처"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/tUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="25dp"
+        android:text="E-mail"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/changeCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/joinSaveBtn"
+        android:layout_alignBottom="@+id/joinSaveBtn"
+        android:layout_toRightOf="@+id/joinSaveBtn"
+        android:onClick="onClick"
+        android:text="취소" />
+
+    <EditText
+        android:id="@+id/joinEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tUser"
+        android:layout_alignBottom="@+id/tUser"
+        android:layout_alignLeft="@+id/joinNum"
+        android:background="@color/input"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text" />
+
+    <EditText
+        android:id="@+id/joinPw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tDirector"
+        android:layout_alignBottom="@+id/tDirector"
+        android:layout_alignLeft="@+id/joinNum"
+        android:background="@color/input"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/text" />
+
+    <EditText
+        android:id="@+id/joinPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView2"
+        android:layout_alignBottom="@+id/TextView2"
+        android:layout_alignLeft="@+id/joinPw2"
+        android:background="@color/input"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/text" />
+
+    <EditText
+        android:id="@+id/joinNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/tDirector"
+        android:background="@color/input"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/joinSaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/joinEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:onClick="onClick"
+        android:text="완료" />
+
+    <TextView
+        android:id="@+id/change_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/joinPw"
+        android:layout_marginTop="106dp"
+        android:background="@color/input"
+        android:ems="10"
+        android:text="id"
+        android:textColor="@color/text" />
+
+    <ImageView
+        android:id="@+id/iVMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/tDirector"
+        android:src="@drawable/mark" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMovieNm"
+        android:layout_toRightOf="@+id/changeCancelBtn"
+        android:src="@drawable/alarmmark" />
+
+</RelativeLayout>
